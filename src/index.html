@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prediction Modeling with TensorFlow</title>
+
+		<!-- Import TensorFlow.js -->
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+		<!-- Import tfjs-vis -->
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<section class="wrapper">
+			<div class="container">
+				<div class="logo-cta">
+					<img
+						src="../assets/tensorflow-js-logo-social.png"
+						alt="TensorFlowJS logo"
+						id="tf-logo"
+					/>
+					<div class="circle-cta">
+						<a href="#">
+							<img
+								src="../assets/768px-Ei-sc-github.svg.png"
+								alt="GitHub logo"
+								id="gh-logo"
+							/>
+						</a>
+					</div>
+				</div>
+				<h1>Making Predictions from 2D Data</h1>
+				<h3>Creating a model to predict vehicle MPG from horsepower.</h3>
+				<p>
+					This is a machine learning model built and trained using the
+					TensorFlow Layers API to make predictions from a 2D dataset. In this
+					demonstration I am using a small dataset and a simple (shallow) model.
+					Given "horsepower" for a car, the model will learn to predict "Miles
+					per Gallon" (MPG). Because we are training a model to predict
+					continuous numbers, this task is sometimes referred to as a regression
+					task. We will train the model by showing it many examples of inputs
+					along with the correct output through a process called supervised
+					learning.
+				</p>
+				<p class="p2">
+					Vizualizing the data can give us a sense of whether there is any
+					structure to the data that the model can learn. Using the TensorFlowJS
+					visor we can use callbacks that we pass in to formulate graphs and
+					scatterplots to visualize data. Given the visualization model to the
+					right, we can see that there is a negative correlation between
+					horsepower and MPG. As the horsepower increases, cars generally get
+					fewer miles per gallon.
+					<br />
+					<br />
+					<br />
+					<span
+						>Continue scrolling to view visualization graphs. Click the GitHub
+						icon to redirect to code repository.</span
+					>
+				</p>
+			</div>
+		</section>
+		<!-- Import the main script file -->
+		<script src="script.js"></script>
+	</body>
+</html>
